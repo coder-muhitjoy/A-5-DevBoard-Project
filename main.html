@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Part</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="main-body" class="bg-[#F4F7FF] min-h-screen max-w-screen">
+    <header class="p-5">
+        <div class="navbar bg-base-100 shadow-sm rounded-lg">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-2xl"><img class="h-7" src="assets/logo.png" alt=""> Dev<span class="font-bold text-black">Board</span></a>
+            </div>
+            <button onclick="getButtonDeskID()" 
+            class="p-3 rounded-lg text-white font-bold bg-blue-500" 
+            id="clear-logs">
+            Back to Desk
+        </button>
+          </div>
+    </header>
+
+    <main class="p-10">
+        <h1 class="text-2xl text-black font-bold text-center">Blogs</h1>
+        <section class=" mt-4 space-y-12">
+            <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
+                <h3 class="border-b p-2 text-xl font-bold ">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <p class="px-2 font-bold text-gray-600">Answer: (Document Object Model) elements is a fundamental aspect of web development with JavaScript. It allows developers to interact with and manipulate elements on a webpage dynamically</p>
+            </div>
+            <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
+                <h3 class="border-b p-2 text-xl font-bold ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                <p class="px-2  font-bold text-gray-600">Answer: textContents is all text contained by an element and all its children that are for formatting purposes only. innerText returns all text contained by an element and all its child elements. innerHtml returns all text, including html tags, that is contained by an element.</p>
+            </div>
+            <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
+                <h3 class="border-b p-2 text-xl font-bold ">Question-3: What is event delegation in the DOM?</h3>
+                <p class="px-2  font-bold text-gray-600">Answer:  DOM (Document Object Model), "event delegation" is a technique where you attach a single event listener to a parent element, allowing it to handle events triggered on its child elements, instead of adding separate listeners to each child element</p>
+            </div>
+            <div class=" bg-white h-28 w-65 rounded-xl space-y-4">
+                <h3 class="border-b p-2 text-xl font-bold ">Question-4: What is event bubbling in the DOM?</h3>
+                <p class="px-2  font-bold text-gray-600">Answer: the process where when an event occurs on an element, it triggers not only on that element but also on its parent elements in the DOM hierarchy.</p>
+            </div>
+            <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
+                <h3 class="border-b p-2 text-xl font-bold ">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h3>
+                <p class="px-2  font-bold text-gray-600">Answer: The first element in the array has an index of 0, the second element has an index of 1, and so on. To add elements at a specific index, you can use the splice method. The splice method allows you to add and remove elements from a specific index in an array..</p>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

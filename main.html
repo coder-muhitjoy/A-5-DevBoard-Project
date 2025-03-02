@@ -14,40 +14,45 @@
             <div class="flex-1">
                 <a class="btn btn-ghost text-2xl"><img class="h-7" src="assets/logo.png" alt=""> Dev<span class="font-bold text-black">Board</span></a>
             </div>
-            <button onclick="getButtonDeskID()" 
+            <button 
             class="p-3 rounded-lg text-white font-bold bg-blue-500" 
-            id="clear-logs">
+            id="back-desk">
             Back to Desk
         </button>
           </div>
     </header>
 
     <main class="p-10">
-        <h1 class="text-2xl text-black font-bold text-center">Blogs</h1>
+        <h1 class="text-2xl text-gray-500 font-bold text-center">Blogs</h1>
         <section class=" mt-4 space-y-12">
             <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
                 <h3 class="border-b p-2 text-xl font-bold ">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="px-2 font-bold text-gray-600">Answer: (Document Object Model) elements is a fundamental aspect of web development with JavaScript. It allows developers to interact with and manipulate elements on a webpage dynamically</p>
+                <p class="px-2 font-bold text-gray-600">Answer: 
+                    To select an Element in DOM - By ID, By Class Name, By Tag Name, By Query Selector, By QuerySelectorAll these are used.</p>
             </div>
             <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
                 <h3 class="border-b p-2 text-xl font-bold ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
-                <p class="px-2  font-bold text-gray-600">Answer: textContents is all text contained by an element and all its children that are for formatting purposes only. innerText returns all text contained by an element and all its child elements. innerHtml returns all text, including html tags, that is contained by an element.</p>
+                <p class="px-2   font-bold text-gray-600">Answer: InnerHTML usually sets the HTML inside an element and calls innerHTML to get any HTML. On the other hand, innerText returns or sets the value inside the element. innerText is used when a value is required. textContent I don't know much about this.</p>
             </div>
             <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
                 <h3 class="border-b p-2 text-xl font-bold ">Question-3: What is event delegation in the DOM?</h3>
-                <p class="px-2  font-bold text-gray-600">Answer:  DOM (Document Object Model), "event delegation" is a technique where you attach a single event listener to a parent element, allowing it to handle events triggered on its child elements, instead of adding separate listeners to each child element</p>
+                <p class="px-2  font-bold text-gray-600">Answer:  Event delegation is a technique in JavaScript where an event listener is attached to a parent element instead of adding multiple listeners to child elements. where events are child to parent elements.</p>
             </div>
             <div class=" bg-white h-28 w-65 rounded-xl space-y-4">
                 <h3 class="border-b p-2 text-xl font-bold ">Question-4: What is event bubbling in the DOM?</h3>
-                <p class="px-2  font-bold text-gray-600">Answer: the process where when an event occurs on an element, it triggers not only on that element but also on its parent elements in the DOM hierarchy.</p>
+                <p class="px-2  font-bold text-gray-600">Answer: Event bubbling is a phase of event propagation where an event starts at the target element and moves up the parent elements of the DOM. </p>
             </div>
             <div class=" bg-white h-28 w-65 rounded-xl space-y-5">
                 <h3 class="border-b p-2 text-xl font-bold ">Question-5: How do you create, add, and remove elements using JavaScript?
                 </h3>
-                <p class="px-2  font-bold text-gray-600">Answer: The first element in the array has an index of 0, the second element has an index of 1, and so on. To add elements at a specific index, you can use the splice method. The splice method allows you to add and remove elements from a specific index in an array..</p>
+                <p class="px-2  font-bold text-gray-600">Answer: Elements can be created, added and removed using the DOM API in JavaScript.</p>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
+    <script>
+        document.getElementById("back-desk").addEventListener("click", function(){
+            window.location.href = "index.html"
+        })
+    </script>
 </body>
 </html>

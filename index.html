@@ -48,7 +48,7 @@
               23
             </p>
           </div>
-          <div>
+          <div class="p-2 bg-gray-300 rounded-full">
             <a onclick ="generateRGBColor()" href=""><img src="assets/theme-btn.png" alt="" /></a>
           </div>
         </div>
@@ -61,7 +61,7 @@
             <div class="flex justify-between p-2 bg-white rounded-lg gap-4">
               <div class="bg-[#F4F7FF] rounded-lg">
                 <div class="flex items-center p-5 space-x-3">
-                  <img src="assets/checkbox.png" alt="" />
+                  <img class="p-3 bg-white rounded-full" src="assets/checkbox.png" alt="" />
                   <div>
                     <h3 class="font-medium">Task Assigned</h3>
                     <p class="font-bold text-3xl text-black" id="task-assigned">
@@ -82,8 +82,12 @@
                 </div>
               </div>
               <div class="flex items-center p-5 bg-[#F4F7FF] space-x-3">
-                <img src="assets/calender.png" alt="" />
-                <p>Wed , <span>Jul 28 2025</span></p>
+                <img class="p-3 bg-white rounded-full" src="assets/calender.png" alt="" />
+                
+                <div>
+                  <p id="day-name" class="text-2xl"></p>
+                <h2 id="date-name" class="font-bold text-[20px]"></h2>
+                </div>
               </div>
             </div>
             <!-- box-section -->
@@ -94,7 +98,7 @@
                   class="bg-white inline-block p-4 text-[#00303C] rounded-lg"
                   >ShopEase</span
                 >
-                <h3 class="font-medium text-2xl task-title text-[#00303C]">
+                <h3 id="title-1" class="font-medium text-2xl task-title text-[#00303C]">
                   Fix Mobile Button Issue
                 </h3>
                 <div class="bg-white p-5 rounded-lg">
@@ -122,7 +126,7 @@
                   class="bg-white inline-block p-4 text-[#00303C] rounded-lg"
                   >CloudSync</span
                 >
-                <h3 class="font-medium text-2xl task-title text-[#00303C]">
+                <h3 id="title-2" class="font-medium text-2xl task-title text-[#00303C]">
                   Add Dark Mode
                 </h3>
                 <div class="bg-white p-5 rounded-lg">
@@ -150,7 +154,7 @@
                   class="bg-white inline-block p-4 text-[#00303C] rounded-lg"
                   >SwiftPay</span
                 >
-                <h3 class="font-medium text-2xl task-title text-[#00303C]">
+                <h3 id="title-3" class="font-medium text-2xl task-title text-[#00303C]">
                   Optimize Home page
                 </h3>
                 <div class="bg-white p-5 rounded-lg">
@@ -178,7 +182,7 @@
                   class="bg-white inline-block p-4 text-[#00303C] rounded-lg"
                   >Meta</span
                 >
-                <h3 class="font-medium text-2xl task-title text-[#00303C]">
+                <h3 id="title-4" class="font-medium text-2xl task-title text-[#00303C]">
                   Add new emoji 🤲
                 </h3>
                 <div class="bg-white p-5 rounded-lg">
@@ -206,7 +210,7 @@
                   class="bg-white inline-block p-4 text-[#00303C] rounded-lg"
                   >Google LLC</span
                 >
-                <h3 class="font-medium text-2xl task-title text-[#00303C]">
+                <h3 id="title-5" class="font-medium text-2xl task-title text-[#00303C]">
                   Integrate OpenAI API
                 </h3>
                 <div class="bg-white p-5 rounded-lg">
@@ -234,7 +238,7 @@
                   class="bg-white inline-block p-4 text-[#00303C] rounded-lg"
                   >Glassdoar</span
                 >
-                <h3 class="font-medium text-2xl task-title text-[#00303C]">
+                <h3 id="title-6" class="font-medium text-2xl task-title text-[#00303C]">
                   Improve Job searching
                 </h3>
                 <div class="bg-white p-5 rounded-lg">
@@ -263,13 +267,17 @@
             class="w-3/12  bg-white rounded-lg text-center space-y-5 pt-10 px-5"
             id="task-log"
           >
-            <img src="assets/activity.png" alt="" />
+            <div class="flex justify-center gap-2">
+              <img src="assets/activity.png" alt="" />
             <h2 class="font-medium text-xl text-black">Activity Log</h2>
+            </div>
             <button class=" p-3 rounded-lg text-white font-bold  bg-blue-500" id="clear-logs">
               Clear History
             </button>
+
             <div id="myDiv" class="border-red-500">
             </div>
+
           </div>
         </div>
       </section>

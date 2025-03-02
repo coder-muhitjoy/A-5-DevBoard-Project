@@ -36,17 +36,17 @@ document.getElementById("")
            
             button.disabled = true;
 
-
-            const myDiv = document.getElementById("myDiv");
-            const p = document.createElement("p");    
-            p.textContent = "You have Complete The Task Optimize Home page at 12:10:06 AM";
-            p.classList.add("p-4", "bg-gray-100", "rounded-lg", "font-bold", "text-[14px]", "mt-2");
-            myDiv.appendChild(p);
-
-            const clearText = document.getElementById("clear-logs")
-            .addEventListener("click", function(){
-                p.classList.add("hidden")
-            })        
+           
+            // const myDiv = document.getElementById("myDiv");
+            // const p = document.createElement("p");    
+            // p.textContent = "You have Complete The Task Optimize Home page at 12:10:06 AM";
+            // p.classList.add("p-4", "bg-gray-100", "rounded-lg", "font-bold", "text-[14px]", "mt-2");
+            // myDiv.appendChild(p);
+  
+            // const clearText = document.getElementById("clear-logs")
+            // .addEventListener("click", function(){
+            //     p.classList.add("hidden")
+            // })        
            
         })
     }
@@ -77,6 +77,112 @@ document.getElementById("")
     document.getElementById('day-name').innerText = fixedDay + ',';
 
     document.getElementById('date-name').innerText = setDate;
+
+
+
+document.getElementById("complete-button-1").addEventListener("click", function(){
+    //    set Time
+    let UniqueDate = new Date();
+
+    const history = document.getElementById('myDiv');
+    const title1 = document.getElementById('title-1').innerText;
+    const addHistory = document.createElement('div');
+    addHistory.innerHTML = `<p>You have Complete The Task ${title1}
+     at ${UniqueDate.toLocaleTimeString()}</p>
+
+`
+    addHistory.classList.add('p-2','mt-4',  'bg-gray-100', 'rounded-lg',)
+    history.appendChild(addHistory);
+})
+
+document.getElementById("complete-button-2").addEventListener("click", function(){
+    //    set Time
+    let UniqueDate = new Date();
+
+    const history = document.getElementById('myDiv');
+    const title2 = document.getElementById('title-2').innerText;
+    const addHistory = document.createElement('div');
+    addHistory.innerHTML = `<p>You have Complete The Task ${title2}
+     at ${UniqueDate.toLocaleTimeString()}</p>
+
+`
+    addHistory.classList.add('p-2', 'mt-4', 'bg-gray-100', 'rounded-lg')
+    history.appendChild(addHistory);
+})
+document.getElementById("complete-button-3").addEventListener("click", function(){
+    //    set Time
+    let UniqueDate = new Date();
+
+    const history = document.getElementById('myDiv');
+    const title3 = document.getElementById('title-3').innerText;
+    const addHistory = document.createElement('div');
+    addHistory.innerHTML = `<p>You have Complete The Task ${title3}
+     at ${UniqueDate.toLocaleTimeString()}</p>
+
+`
+    addHistory.classList.add('p-2', 'mt-4', 'bg-gray-100', 'rounded-lg')
+    history.appendChild(addHistory);
+})
+document.getElementById("complete-button-4").addEventListener("click", function(){
+    //    set Time
+    let UniqueDate = new Date();
+
+    const history = document.getElementById('myDiv');
+    const title4 = document.getElementById('title-4').innerText;
+    const addHistory = document.createElement('div');
+    addHistory.innerHTML = `<p>You have Complete The Task ${title4}
+     at ${UniqueDate.toLocaleTimeString()}</p>
+
+`
+    addHistory.classList.add('p-2', 'mt-4', 'bg-gray-100', 'rounded-lg')
+    history.appendChild(addHistory);
+})
+
+document.getElementById("complete-button-5").addEventListener("click", function(){
+    //    set Time
+    let UniqueDate = new Date();
+
+    const history = document.getElementById('myDiv');
+    const title5 = document.getElementById('title-5').innerText;
+    const addHistory = document.createElement('div');
+    addHistory.innerHTML = `<p>You have Complete The Task ${title5}
+     at ${UniqueDate.toLocaleTimeString()}</p>
+
+`
+    addHistory.classList.add('p-2', 'mt-4', 'bg-gray-100', 'rounded-lg')
+    history.appendChild(addHistory);
+})
+document.getElementById("complete-button-6").addEventListener("click", function(){
+    //    set Time
+    let UniqueDate = new Date();
+
+    const history = document.getElementById('myDiv');
+    const title6 = document.getElementById('title-6').innerText;
+    const addHistory = document.createElement('div');
+    addHistory.innerHTML = `<p>You have Complete The Task ${title6}
+     at ${UniqueDate.toLocaleTimeString()}</p>
+
+`
+    addHistory.classList.add('p-2', 'mt-4', 'bg-gray-100', 'rounded-lg')
+
+    history.appendChild(addHistory);
+    
+})
+
+document.getElementById("clear-logs").addEventListener("click", function(){
+    const history = document.getElementById('myDiv');
+    history.innerHTML = ""
+
+  
+})
+
+
+      
+
+     
+  
+     
+
 
     
 
